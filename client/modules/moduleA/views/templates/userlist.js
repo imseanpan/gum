@@ -1,0 +1,2 @@
+/*TMODJS:{"version":2,"md5":"dcba606f50f2d56854ff66a338ce6f97"}*/
+var template=require("../../../template");module.exports=template("moduleA/views/templates/userlist",function(a){"use strict";var b=this,c=(b.$helpers,a.i),d=a.list,e=b.$escape,f="";for(f+="<ul> ",c=0;c<d.length;c++)f+=" <li>\u5927\u5bb6\u7684\u5c5e\u6027 ",f+=e(c+1),f+=" \uff1a",f+=e(d[c]),f+="</li> ";return f+=" </ul>",new String(f)});
