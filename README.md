@@ -9,13 +9,8 @@
 ### Browserify
 **Browserify**是这个架构的核心模块，起到预编译的作用。所以必须安装。
 
-
 安装命令
 
-
-```
-npm install -g browserify
-```
 更多介绍请参考[Browserify官网](http://browserify.org/)
 
 ### artTemplate模板引擎
