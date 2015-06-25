@@ -1,0 +1,2 @@
+/*TMODJS:{"version":2,"md5":"e0e48959e1f54f168b4e68fb19ae2177"}*/
+var template=require("../../../template");module.exports=template("moduleA/views/templates/job",function(a){"use strict";var b=this,c=(b.$helpers,b.$escape),d=a.title,e="";return e+="<h1>\u804c\u4f4d2: ",e+=c(d),e+="</h1>",new String(e)});
