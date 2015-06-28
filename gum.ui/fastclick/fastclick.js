@@ -460,11 +460,9 @@ FastClick.prototype.onTouchStart = function (event) {
 FastClick.prototype.touchHasMoved = function (event) {
     var touch = event.changedTouches[0], boundary = this.touchBoundary;
 
-    if (Math.abs(touch.pageX - this.touchStartX) > boundary || Math.abs(touch.pageY - this.touchStartY) > boundary) {
-        return true;
-    }
+    return !!(Math.abs(touch.pageX - this.touchStartX) > boundary || Math.abs(touch.pageY - this.touchStartY) > boundary);
 
-    return false;
+
 };
 
 
@@ -809,8 +807,6 @@ FastClick.notNeeded = function (layer) {
     // IE11: prefixed -ms-touch-action is no longer supported and it's recomended to use non-prefixed version
     // http://msdn.microsoft.com/en-us/library/windows/apps/Hh767313.aspx
     return !!(layer.style.touchAction === 'none' || layer.style.touchAction === 'manipulation');
-
-
 };
 
 
@@ -824,16 +820,19 @@ FastClick.attach = function (layer, options) {
     return new FastClick(layer, options);
 };
 
+/** @module FastClick */
+module.exports = FastClick.attach;
+module.exports.FastClick = FastClick;
 
-if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
-
-    // AMD. Register as an anonymous module.
-    define(function () {
-        return FastClick;
-    });
-} else if (typeof module !== 'undefined' && module.exports) {
-    module.exports = FastClick.attach;
-    module.exports.FastClick = FastClick;
-} else {
-    window.FastClick = FastClick;
-}
+//    if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
+//
+//        // AMD. Register as an anonymous module.
+//        define(function() {
+//            return FastClick;
+//        });
+//    } else if (typeof module !== 'undefined' && module.exports) {
+//        module.exports = FastClick.attach;
+//        module.exports.FastClick = FastClick;
+//    } else {
+//        window.FastClick = FastClick;
+//    }
