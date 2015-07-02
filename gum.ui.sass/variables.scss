@@ -6,7 +6,7 @@
 // Type
 // --------------------------------------------------
 $font-family-default: "Helvetica Neue", Helvetica, sans-serif !default;
-$font-size-default: 17px !default;
+$font-size-default: 12px !default;
 $font-weight: 500 !default;
 $font-weight-light: 400 !default;
 $line-height-default: 21px !default;
@@ -16,14 +16,18 @@ $line-height-default: 21px !default;
 // --------------------------------------------------
 
 // Main theme colors
+$base-black: #000 !default;
+$base-white: #fff !default;
 $primary-color: #428bca !default;
 $chrome-color:  #fff !default;
 
 // Action colors
 $default-color:  #fff !default;
 $positive-color: #5cb85c !default;
-$negative-color: #d9534f !default;
-
+//$negative-color: #d9534f !default;
+$negative-color: #fa3d61 !default;
+$negative-checkbox-content-color: #fa3d61 !default;
+$negative-checkbox-border-color: #823e03 !default;
 
 // Bars
 // --------------------------------------------------

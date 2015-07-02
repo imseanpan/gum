@@ -72,3 +72,12 @@
     width: 8.33333333%;
   }
 }
+.grid {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.grid-cell {
+  position: relative;
+  display: table-cell;
+}

@@ -5,17 +5,17 @@
 .table-view {
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 15px;
+  //margin-bottom: 15px;
   list-style: none; // Remove usual bullet styles from table view
-  background-color: #fff;
-  border-top: $border-default;
-  border-bottom: $border-default;
+  //background-color: #fff;
+  //border-top: $border-default;
+  //border-bottom: $border-default;
 }
 
 // Pad each table view item and add dividers
 .table-view-cell {
   position: relative;
-  padding: 11px 65px 11px 15px;
+  //padding: 11px 65px 11px 15px;
   overflow: hidden;
   border-bottom: $border-default;
 

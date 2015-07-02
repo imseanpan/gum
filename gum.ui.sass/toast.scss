@@ -1,0 +1,19 @@
+.toast-container {
+  position: fixed;
+  width: 100%;
+  bottom: 50%;
+  z-index: 9999;
+
+}
+
+.toast-message {
+  width: 270px;
+  margin: 5px auto 5px auto;
+  padding: 5px 5px 5px 5px;
+  background-color: $base-black;
+  text-align: center;
+  color: $base-white;
+  border-radius: 7px;
+  font-size: 14px;
+  opacity: 0.6;
+}

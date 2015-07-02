@@ -2,7 +2,7 @@
 /**
  *
  **/
-var tpl = require('toast.tpl');
+//var tpl = require('toast.tpl');
 
 /**
  * 自动消失提示框
@@ -29,13 +29,13 @@ Toast.prototype = {
         var timeOut = (arguments.length === 2) ? arguments[1] : 2000;
 
         // 定义一个提示框div
-        var toast = tpl(message);
+        var toast = document.createElement('div');
 
-        //// 定义css
-        //toast.classList.add('mui-toast-container');
-        //
-        //// 添加文字信息
-        //toast.innerHTML = '<div class="' + 'mui-toast-message' + '">' + message + '</div>';
+        // 定义css
+        toast.classList.add('toast-container');
+
+        // 添加文字信息
+        toast.innerHTML = '<div class="' + 'toast-message' + '">' + message + '</div>';
 
         // 添加到窗体内
         document.body.appendChild(toast);
