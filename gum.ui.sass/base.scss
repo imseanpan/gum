@@ -27,7 +27,8 @@ body {
 a {
   color: $primary-color;
   text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0,0,0,0); // Removes the dark touch outlines on links in webkit browsers.
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // Removes the dark touch outlines on links in webkit browsers.
+  -webkit-tap-highlight-color: transparent;
 
   &:active {
     color: darken($primary-color, 10%);
@@ -57,6 +58,7 @@ a {
 .bar-nav ~ .content {
   padding-top: $bar-base-height;
 }
+
 .bar-header-secondary ~ .content {
   padding-top: ($bar-base-height*2);
 }
@@ -65,6 +67,7 @@ a {
 .bar-footer ~ .content {
   padding-bottom: $bar-base-height;
 }
+
 .bar-footer-secondary ~ .content {
   padding-bottom: ($bar-base-height*2);
 }
@@ -73,6 +76,7 @@ a {
 .bar-tab ~ .content {
   padding-bottom: $bar-tab-height;
 }
+
 .bar-footer-secondary-tab ~ .content {
   padding-bottom: ($bar-tab-height+$bar-base-height);
 }
@@ -81,12 +85,15 @@ a {
 .content-padded {
   margin: $bar-side-spacing;
 }
+
 .pull-left {
   float: left;
 }
+
 .pull-right {
   float: right;
 }
+
 .clearfix {
   @include clearfix();
 }

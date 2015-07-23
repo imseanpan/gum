@@ -2,7 +2,6 @@
 // Variables
 // --------------------------------------------------
 
-
 // Type
 // --------------------------------------------------
 $font-family-default: "Helvetica Neue", Helvetica, sans-serif !default;
@@ -11,21 +10,30 @@ $font-weight: 500 !default;
 $font-weight-light: 400 !default;
 $line-height-default: 21px !default;
 
-
 // Colors
 // --------------------------------------------------
 
+$negative-color: #f66b6b !default;
+$checkbox-color: #ed7242 !default;
+$color-e06363: #e06363 !default;
+$color-999999: #999999 !default;
+$color-dcdcdc: #dcdcdc !default;
+$color-dfefe1: #dfdfe1 !default;
+$color-c1c1c1: #c1c1c1 !default;
+
+//$negative-color2: hsl(0,88%,56%) !default;
+
 // Font colors
-$base-font-color: #666 !default;
+$base-font-color: #333 !default;
 
 // Main theme colors
 $base-black: #000 !default;
 $base-white: #fff !default;
 $primary-color: #428bca !default;
-$chrome-color:  #fff !default;
+$chrome-color: #fff !default;
 
 // Action colors
-$default-color:  #fff !default;
+$default-color: #fff !default;
 $positive-color: #5cb85c !default;
 //$negative-color: #d9534f !default;
 $negative-color: #fa3d61 !default;
@@ -35,31 +43,34 @@ $negative-checkbox-border-color: #823e03 !default;
 // Bars
 // --------------------------------------------------
 
-$bar-base-height:  44px !default;
-$bar-tab-height:   50px !default;
+$bar-base-height: 44px !default;
+$bar-tab-height: 50px !default;
 $bar-side-spacing: 10px !default;
-
 
 // Cards
 // --------------------------------------------------
 
 $card-bg: #fff !default;
 
-
 // Buttons
 // --------------------------------------------------
 
-$button-font-size: 12px !default;
-
+$button-font-size: 14px !default;
 
 // Transitions
 // --------------------------------------------------
 
-$timing-fuction: cubic-bezier(.1,.5,.1,1) !default; // Inspired by @c2prods
-
+$timing-fuction: cubic-bezier(.1, .5, .1, 1) !default;
+// Inspired by @c2prods
 
 // Borders
 // --------------------------------------------------
 
 $border-default: 1px solid #ddd !default;
 $border-radius: 6px !default;
+
+$padding-width: 15px !default;
+$padding-left-width: -60px !default;
+$padding-a-width: -20px !default;
+$padding-right-width: -15px !default;
+$padding-push-width: 19px !default;

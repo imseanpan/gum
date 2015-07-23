@@ -55,6 +55,9 @@ Toast.prototype = {
         // 定义一个提示框div
         var toast = document.createElement('div');
 
+        // 添加ID
+        toast.id = "loading";
+
         // 定义css
         toast.classList.add('toast-container');
 
@@ -75,8 +78,13 @@ Toast.prototype = {
             },timeOut);
         }
     },
-    hideLoadingToast :function(toast) {
-        document.body.removeChild(toast);
+    hideLoadingToast :function() {
+
+        // 取得loading元素
+        var loading = document.getElementById('loading');
+
+        // 删除loading元素
+        document.body.removeChild(loading);
     }
 };
 

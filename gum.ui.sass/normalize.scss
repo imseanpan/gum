@@ -423,3 +423,10 @@ td,
 th {
   padding: 0;
 }
+
+input,
+select,
+div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}

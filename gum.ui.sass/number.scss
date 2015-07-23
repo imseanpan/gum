@@ -1,0 +1,87 @@
+.numbox {
+  border: solid 1px $color-dfefe1;
+  overflow: hidden;
+  display: inline-block;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #efeff4;
+  position: relative;
+  padding: 0 35px 0 35px;
+  width: 120px;
+  vertical-align: middle;
+
+  [class*=numbox-btn] {
+    width: 35px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 25px;
+    color: $color-999999;
+    line-height: 100%;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 0;
+    background-color: white;
+    //padding-bottom: 4px;
+
+    &:active {
+      background-color: white;
+    }
+    &[disabled] {
+      color: $color-c1c1c1;
+    }
+  }
+
+  .numbox-btn-plus {
+    right: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 16px;
+
+  }
+
+  .numbox-btn-minus {
+    left: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 16px;
+  }
+
+  .numbox-btn-plus:after {
+    content: '\e617';
+    font-family: "numbox" !important;
+  }
+
+  .numbox-btn-minus:after {
+
+    content: '\e618';
+    font-family: "numbox" !important;
+
+  }
+
+  .numbox-input {
+    color: $base-font-color;
+    width: 100% !important;
+    height: 100%;
+    text-align: center;
+    border: none !important;
+    border-left: solid 1px $color-dfefe1 !important;
+    border-right: solid 1px $color-dfefe1 !important;
+    margin: 0;
+    padding: 0 3px !important;
+    display: inline-block;
+    border-radius: 0 !important;
+    text-overflow: ellipsis;
+    word-break: normal;
+    overflow: hidden;
+    font-size: 19px;
+  }
+
+}
+
+.input-row .numbox {
+  margin: 2px 8px;
+  float: right;
+}

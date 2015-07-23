@@ -17,8 +17,8 @@
   &.sliding {
     z-index: 2;
     -webkit-transition: -webkit-transform .4s;
-       -moz-transition: -moz-transform .4s;
-            transition: transform .4s;
+    -moz-transition: -moz-transform .4s;
+    transition: transform .4s;
     @include transform(translate3d(0, 0, 0));
 
     &.left {
@@ -40,24 +40,61 @@
 .push-right {
   &:after {
     position: absolute;
-    top: 50%;
+    top: 48%;
     display: inline-block;
     font-family: Ratchicons;
     font-size: inherit;
     line-height: 1;
-    color: #bbb;
+    color: $color-999999;
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
     @include transform(translateY(-50%));
   }
 }
+
+//
+.navigate-right-down {
+  &:after {
+    position: absolute;
+    top: 35%;
+    display: inline-block;
+    font-family: Ratchicons;
+    font-size: inherit;
+    line-height: 1;
+    color: $color-999999;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    //@include transform(translateY(-50%));
+    @include transform(rotate(90deg));
+  }
+}
+
+.navigate-right-up {
+  &:after {
+    position: absolute;
+    top: 35%;
+    display: inline-block;
+    font-family: Ratchicons;
+    font-size: inherit;
+    line-height: 1;
+    color: $color-999999;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    //@include transform(translateY(-50%));
+    @include transform(rotate(-90deg));
+  }
+}
+
 .navigate-left:after,
 .push-left:after {
-  left: 15px;
+  left: $padding-push-width;
   content: '\e822';
 }
+
+.navigate-right-up:after,
+.navigate-right-down:after,
 .navigate-right:after,
-.push-right:after{
-  right: 15px;
+.push-right:after {
+  right: $padding-push-width;
   content: '\e826';
 }

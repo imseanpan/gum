@@ -17,8 +17,9 @@
   cursor: pointer;
   background-color: $chrome-color;
   border: 1px solid #ccc;
-  border-radius: 2px;
-  outline:none;
+  //border-radius: 2px;
+  outline: none;
+
   // Active & filled button styles
   &:active,
   &.active {
@@ -32,7 +33,6 @@
     opacity: .6;
   }
 }
-
 
 // Other button types
 // --------------------------------------------------
@@ -74,13 +74,22 @@
   &:active,
   &.active {
     color: #fff;
-    background-color: darken($negative-color, 10%);
-    border: 1px solid darken($negative-color, 10%);
+    background-color: $color-e06363;
+    border: 1px solid $color-e06363;
+  }
+
+  // Disabled styles & filled button active styles
+  &:disabled,
+  &.disabled {
+    color: #fff;
+    background-color: $color-999999;
+    border: 1px solid $color-999999;
   }
 }
 
 // Outlined buttons
 .btn-outlined {
+
   background-color: transparent;
 
   &.btn-primary {
@@ -119,11 +128,10 @@
 .btn-block {
   display: block;
   width: 100%;
-  padding: 15px 0;
+  padding: 10px 0 10px 0;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 17px;
 }
-
 
 // Button overrides
 // --------------------------------------------------
@@ -134,7 +142,6 @@ input[type="button"] {
   width: 100%;
 }
 
-
 // Buttons with badges
 // --------------------------------------------------
 
@@ -142,7 +149,7 @@ input[type="button"] {
 .btn .badge {
   margin: -2px -4px -2px 4px;
   font-size: 12px;
-  background-color: rgba(0,0,0,.15);
+  background-color: rgba(0, 0, 0, .15);
 }
 
 // Buttons with inverted badges
@@ -150,6 +157,7 @@ input[type="button"] {
 .btn:active .badge-inverted {
   background-color: transparent;
 }
+
 .btn-primary:active .badge-inverted,
 .btn-positive:active .badge-inverted,
 .btn-negative:active .badge-inverted {
@@ -165,10 +173,10 @@ input[type="button"] {
   margin-right: 10px;
 }
 
-
 // Buttons with Ratchicons
 // --------------------------------------------------
 
 .btn .icon {
   font-size: inherit;
 }
+

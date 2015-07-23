@@ -10,6 +10,8 @@
   //background-color: #fff;
   //border-top: $border-default;
   //border-bottom: $border-default;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 
 // Pad each table view item and add dividers
@@ -27,7 +29,7 @@
     position: relative;
     display: block;
     padding: inherit;
-    margin: -11px -65px -11px -15px; // Make the entire list item tappable.
+    margin: -11px -$padding-width -11px -$padding-width; // Make the entire list item tappable.
     overflow: hidden;
     color: inherit;
 
@@ -43,7 +45,7 @@
 // Pad each table view item and add dividers
 .table-view-cell {
   position: relative;
-  padding: 11px 20px 12px 20px;
+  padding: 11px $padding-width 12px $padding-width;
 
   overflow: hidden;
   color: #999;
@@ -56,7 +58,7 @@
     position: relative;
     display: block;
     padding: inherit;
-    margin: -11px -65px -11px -15px; // Make the entire list item tappable.
+    margin: -11px $padding-left-width -11px $padding-right-width; // Make the entire list item tappable.
     overflow: hidden;
     color: inherit;
 
@@ -72,15 +74,16 @@
 // Pad each table view item and add dividers
 .table-view-cell-arrow {
   position: relative;
-  padding: 11px 20px 11px 20px;
+  padding: 11px $padding-width 11px $padding-width;
   overflow: hidden;
   border-bottom: $border-default;
   color: $base-font-color;
+
   // Remove the border from the last table view item
   &:last-child {
     border-bottom: $border-default;
   }
-  &:first-child{
+  &:first-child {
     border-top: $border-default;
   }
   // If it's a table view of links, make sure the child <a> takes up full table view item tap area (want to avoid selecting child buttons though)
@@ -88,10 +91,10 @@
     position: relative;
     display: block;
     padding: inherit;
-    margin: -11px -25px -11px -20px; // Make the entire list item tappable.
+    margin: -11px $padding-a-width -11px $padding-right-width; // Make the entire list item tappable.
     overflow: hidden;
     color: inherit;
-
+    //line-height: 20px;
     &:active {
       background-color: #eee;
     }
@@ -99,12 +102,17 @@
   p {
     margin-bottom: 0;
   }
+  .right-span {
+    margin-right: 23px;
+    float: right;
+    color: $color-999999;
+  }
 }
 
 // Pad each table view item and add dividers
 .table-view-no-line-cell {
   position: relative;
-  padding: 5px 20px 6px 20px;
+  padding: 5px $padding-width 6px $padding-width;
 
   overflow: hidden;
   color: #999;
@@ -117,7 +125,7 @@
     position: relative;
     display: block;
     padding: inherit;
-    margin: -11px -65px -11px -15px; // Make the entire list item tappable.
+    margin: -11px $padding-left-width -11px $padding-right-width; // Make the entire list item tappable.
     overflow: hidden;
     color: inherit;
 
@@ -197,3 +205,88 @@
 .content > .table-view:first-child {
   margin-top: 15px;
 }
+
+// If just one button in row. Pls use it.
+.table-view-btn-block {
+  padding-left: 32.25px;
+  padding-right: 32.25px;
+  height: 60px;
+  font-size: 17px;
+}
+
+// Pay row css .Pls use it.
+.table-view-pay {
+  height: 60px;
+  font-size: 14px;
+}
+
+.table-view-pay .left {
+  border-top: 1px solid $color-dcdcdc;
+  padding-left: 21px;
+  :first-child {
+    font-size: 13px;
+  }
+  :last-child {
+    font-size: 18px;
+    color: $negative-color;
+  }
+}
+
+.table-view-pay .right {
+  width: 80px;
+  height: 60px;
+  > button {
+    height: 60px;
+  }
+}
+
+.table-view-choose {
+  border-top: 1px solid $color-dcdcdc;
+  padding: 10px;
+  height: 60px;
+}
+
+.table-view-choose .left {
+  padding-right: 7.5px;
+}
+
+.table-view-choose .right {
+  padding-left: 7.5px;
+}
+
+.table-view-cell-input {
+  position: relative;
+  padding: 4px $padding-width 4px $padding-width;
+  overflow: hidden;
+  border-bottom: $border-default;
+  color: $base-font-color;
+
+  .form {
+    float: right;
+  }
+
+  span {
+    position: absolute;
+    padding-top: 8px;
+    margin-bottom: 2px;
+  }
+}
+
+.table-view-cell-checkbox {
+  position: relative;
+  padding: 5px $padding-width 4px $padding-width;
+  overflow: hidden;
+  border-bottom: $border-default;
+  color: $base-font-color;
+
+  .form {
+    float: right;
+  }
+
+  span {
+    position: absolute;
+    padding-top: 8px;
+    margin-bottom: 2px;
+  }
+}
+
