@@ -268,6 +268,15 @@
   src: url('./fonts/numbox.eot?#iefix') format('embedded-opentype'), url('./fonts/numbox.woff') format('woff'), url('./fonts/numbox.ttf') format('truetype'), url('./fonts/numbox.svg#iconfont') format('svg');
 }
 
+@font-face {
+  font-family: "pingan";
+  src: url('./fonts/iconfont.eot');
+  src: url('./fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/iconfont.woff') format('woff'),
+  url('./fonts/iconfont.ttf') format('truetype'),
+  url('./fonts/iconfont.svg#iconfont') format('svg');
+}
+
 .iconfont {
   font-family: "numbox" !important;
   font-size: 16px;
@@ -287,6 +296,22 @@
   &:before {
     content: '\e618';
   }
+}
+
+.icon-fail:before {
+  content: "\e608";
+}
+
+.icon-right:before {
+  content: "\e607";
+}
+
+.icon-share:before {
+  content: "\e606";
+}
+
+.icon-calendar:before {
+  content: "\e600";
 }
 
 

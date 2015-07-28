@@ -17,7 +17,7 @@
   cursor: pointer;
   background-color: $chrome-color;
   border: 1px solid #ccc;
-  //border-radius: 2px;
+  border-radius: 3px;
   outline: none;
 
   // Active & filled button styles
@@ -32,6 +32,10 @@
   &.disabled {
     opacity: .6;
   }
+}
+
+.no-radius {
+  border-radius: 0;
 }
 
 // Other button types
@@ -87,6 +91,20 @@
   }
 }
 
+// Negative button (Default color is red)
+.btn-alert {
+  color: #fff;
+  background-color: $color-efefef;
+  border: 1px solid $color-dfefe1;
+
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $color-efefef;
+    border: 1px solid $color-dfefe1;
+  }
+}
+
 // Outlined buttons
 .btn-outlined {
 
@@ -100,6 +118,10 @@
   }
   &.btn-negative {
     color: $negative-color;
+  }
+  &.btn-alert {
+    color: $negative-color;
+    background-color: $color-efefef;
   }
   // Active states
   &.btn-primary:active,
@@ -160,7 +182,8 @@ input[type="button"] {
 
 .btn-primary:active .badge-inverted,
 .btn-positive:active .badge-inverted,
-.btn-negative:active .badge-inverted {
+.btn-negative:active .badge-inverted,
+.btn-alert:active .badge-inverted {
   color: #fff;
 }
 
