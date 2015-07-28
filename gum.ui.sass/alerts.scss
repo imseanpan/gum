@@ -1,0 +1,63 @@
+body.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.alert-overlay {
+  background-color: black;
+  /* IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  /* IE8 */
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  //display: none;
+  z-index: 10000;
+
+  opacity: 1.02;
+  display: block;
+}
+
+
+.alert {
+  display: block;
+  margin-top: -144px;
+  background-color: white;
+  width: 478px;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -256px;
+  //margin-top: -200px;
+  overflow: hidden;
+  //display: none;
+  z-index: 99999;
+  padding: 17px 17px 0px;
+}
+
+.alert-title{
+  font-size: 17px;
+  color:$color-999999;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-c1c1c1;
+}
+
+.alert-message{
+  font-size: 15px;
+  color:$color-333333;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+@media all and (max-width: 540px) {
+  .alert {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    left: 15px;
+    right: 15px;
+  }
+}

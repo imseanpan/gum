@@ -71,7 +71,8 @@
     ]
   },
   "browser": {
-    "wechat": "./gum.ui/wechatSDK/wechat.js"
+    "wechat": "./gum.ui/wechatSDK/wechat.js",
+    "template": "./template.js"
   },
   "browserify-shim": {
     "wechat": "wechatSDK"
