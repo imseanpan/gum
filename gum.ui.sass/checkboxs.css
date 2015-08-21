@@ -1,0 +1,40 @@
+/*
+Error: Invalid US-ASCII character "\xE5"
+        on line 1 of checkboxs.scss
+
+1: /*可以控制选中时正方体的宽度默认,右侧也可以点击!!!*\/
+2: input[type=checkbox] {
+3:   opacity: 0;
+4: }
+5: 
+6: /*定义了选择的正方体高度*\/
+
+Backtrace:
+checkboxs.scss:1
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:1320:in `block in find_encoding_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:1319:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:1319:in `each_with_index'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:1319:in `find_encoding_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:896:in `check_sass_encoding'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:423:in `check_encoding!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:379:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/bin/scss:13:in `<top (required)>'
+/usr/bin/scss:23:in `load'
+/usr/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xE5\"\A         on line 1 of checkboxs.scss\A \A 1: /*可以控制选中时正方体的宽度默认,右侧也可以点击!!!*/\A 2: input[type=checkbox] {\A 3:   opacity: 0;\A 4: }\A 5: \A 6: /*定义了选择的正方体高度*/"; }

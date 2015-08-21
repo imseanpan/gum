@@ -34,8 +34,10 @@
 }
 
 // Add chevrons to elements
+
 .navigate-left,
 .navigate-right,
+.input-right,
 .push-left,
 .push-right {
   &:after {
@@ -55,6 +57,7 @@
 //
 .navigate-right-down {
   &:after {
+    content: '\e814';
     position: absolute;
     top: 35%;
     display: inline-block;
@@ -71,6 +74,7 @@
 
 .navigate-right-up {
   &:after {
+    content: '\e81f';
     position: absolute;
     top: 35%;
     display: inline-block;
@@ -85,10 +89,40 @@
   }
 }
 
+.radio-check-right {
+  &:after {
+    position: absolute;
+    top: 48%;
+    display: inline-block;
+    font-family: pingan;
+    font-size: 20px;
+    line-height: 1;
+    color: $checkbox-color;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    @include transform(translateY(-50%));
+  }
+}
+
+.radio-check-right:after {
+  right: $padding-push-width;
+  content: '';
+}
+
+.radio-check-selected:after {
+  right: $padding-push-width;
+  content: '\e607';
+}
+
 .navigate-left:after,
 .push-left:after {
   left: $padding-push-width;
   content: '\e822';
+}
+
+.input-right:after {
+  right: 14px;
+  content: '\e818';
 }
 
 .navigate-right-up:after,
@@ -96,5 +130,5 @@
 .navigate-right:after,
 .push-right:after {
   right: $padding-push-width;
-  content: '\e826';
+  content: '\e818';
 }

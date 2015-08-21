@@ -24,6 +24,7 @@ Router.prototype = {
      * @function
      * @name add
      * @param {string} path - 路由地址
+     * @param {function} callback - 回调函数
      */
     add : function (path,callback) {
 
@@ -58,7 +59,7 @@ Router.prototype = {
      * 此方法位核心方法
      * @function
      * @name check
-     * @param {string} hashPath - 路由地址
+     * @param {string} currentUrl - 路由地址
      */
     check : function (currentUrl) {
 
@@ -146,3 +147,4 @@ Router.prototype = {
 
 /** @module Router */
 module.exports = Router;
+

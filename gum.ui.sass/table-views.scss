@@ -48,10 +48,12 @@
   padding: 11px $padding-width 12px $padding-width;
 
   overflow: hidden;
-  color: #999;
+  color: $color-666666;
+  //border-bottom: $border-default;
+
   // Remove the border from the last table view item
   &:last-child {
-    border-bottom: $border-default;
+    //border-bottom: $border-default;
   }
   // If it's a table view of links, make sure the child <a> takes up full table view item tap area (want to avoid selecting child buttons though)
   > a:not(.btn) {
@@ -146,14 +148,30 @@
   margin-top: -1px; // Hides the border of the previous list item
   margin-left: 0;
 
-  color: #666;
   //background-color: #fafafa;
-  border-top: $border-default;
-  border-bottom: $border-default;
-
+  //border-top: $border-default;
+  //border-bottom: $border-default;
+  color: $color-999999;
   min-height: 44px;
   padding-top: 11px;
   padding-bottom: 6px;
+
+  //font-weight: $font-weight;
+}
+
+.table-view-city-divider {
+  padding-left: 12px;
+  margin-top: -1px; // Hides the border of the previous list item
+  margin-left: 0;
+
+  color: $color-999999;
+  background-color: #fafafa;
+  //border-top: $border-default;
+  //border-bottom: $border-default;
+
+  min-height: 25px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 
   //font-weight: $font-weight;
 }
@@ -250,10 +268,12 @@
 
   height: 55px;
 }
+
 .table-view-alert-choose .left,
 .table-view-choose .left {
   padding-right: 7.5px;
 }
+
 .table-view-alert-choose .right,
 .table-view-choose .right {
   padding-left: 7.5px;
@@ -295,3 +315,189 @@
   }
 }
 
+.table-view-cell-radio {
+  position: relative;
+  padding: 5px $padding-width 4px $padding-width;
+  overflow: hidden;
+  border-bottom: $border-default;
+  color: $base-font-color;
+
+  .form {
+    float: right;
+  }
+
+  span {
+    padding-top: 8px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+  }
+}
+
+// Table-views with city list
+// --------------------------------------------------
+.table-view-city-dividers {
+  height: 90% !important;
+  top: 24px !important;
+}
+
+.table-view-city-dividers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: -webkit-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 0;
+  color: #f66b6b;
+  font-size: 12px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-user-select: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  padding-top: 10px;
+}
+
+.table-view-city-divider-item {
+  display: -webkit-box;
+  padding: 0 5px;
+  width: 36px;
+  cursor: pointer;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+
+.table-view-city-cell {
+  position: relative;
+  padding: 11px $padding-width 12px $padding-width;
+  overflow: hidden;
+  color: $color-333333;
+
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#{$color-dcdcdc}' x='0' y='0' width='100%' height='0.5'/></svg>");
+  background-position-x: 0;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  border-bottom: 0;
+
+  // Remove the border from the last table view item
+  &:last-child {
+    //border-bottom: $border-default;
+  }
+  // If it's a table view of links, make sure the child <a> takes up full table view item tap area (want to avoid selecting child buttons though)
+  > a:not(.btn) {
+    position: relative;
+    display: block;
+    padding: inherit;
+    margin: -11px $padding-left-width -11px $padding-right-width; // Make the entire list item tappable.
+    overflow: hidden;
+    color: inherit;
+
+    &:active {
+      background-color: #eee;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.sl-selected {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 200;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  line-height: 60px;
+  background: #000;
+  opacity: .35;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.short-line {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='2'><rect fill='#{$color-dcdcdc}' x='0' y='0' width='100%' height='1'/></svg>");
+  background-position-x: 15px;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  border-bottom: 0;
+}
+
+.short-line-right {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#{$color-dcdcdc}' x='0' y='0' width='100%' height='0.5'/></svg>");
+  background-position-x: 0;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  border-bottom: 0;
+}
+
+// Table-views with card list
+// --------------------------------------------------
+.inner-card {
+
+  border-radius: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 9px;
+  padding-right: 9px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><rect fill='none' stroke='#999999' x='0' y='0' width='100%' height='100%' rx='3' ry='3'/></svg>");
+  background-position-x: 0;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+}
+
+.inner-right-text {
+  vertical-align: middle;
+}
+
+// The upper right corner of the icon in the list, use it
+// --------------------------------------------------
+.action-nav-normal .triangle-button {
+  border-top-right-radius: 3px;
+  pointer-events: none;
+}
+
+.triangle-button {
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  top: 0;
+  right: 0;
+  color: #fff;
+  overflow: hidden;
+  height: 45px;
+  width: 45px;
+  text-shadow: none;
+  border-top-right-radius: 3px;
+}
+
+.triangle-button.red:before {
+  border-right-color: #f36d6b;
+}
+
+.triangle-button:before {
+  content: '';
+  display: inline-block;
+  border-right: 45px solid;
+  border-bottom: 45px solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.triangle-button i, .triangle-button .inner {
+  z-index: 1;
+  position: absolute;
+
+  transform: rotate(45deg);
+  right: 1px;
+  top: 7px;
+}

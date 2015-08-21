@@ -1,0 +1,27 @@
+body.stop-scrolling {
+  height: 100%;
+  overflow: hidden; }
+
+.sweet-alert {
+  background-color: white;
+  width: 478px;
+  padding: 17px;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -256px;
+  margin-top: -200px;
+  overflow: hidden;
+  display: none;
+  z-index: 99999; }
+
+@media all and (max-width: 540px) {
+  .sweet-alert {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    left: 15px;
+    right: 15px; } }
+
+/*# sourceMappingURL=alerts.css.map */

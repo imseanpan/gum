@@ -13,7 +13,7 @@
   background-color: $chrome-color;
   border-bottom: $border-default;
   -webkit-backface-visibility: hidden; // Make sure the bar is visible when a modal animates in.
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 // Modifier class to dock any bar below .bar-nav
@@ -44,7 +44,6 @@
   border-bottom: 0;
 }
 
-
 // Nav bar
 // --------------------------------------------------
 
@@ -71,11 +70,11 @@
   text-align: center;
   white-space: nowrap;
 }
+
 // Retain specified title color
 .title a {
   color: inherit;
 }
-
 
 // Tab bar
 // --------------------------------------------------
@@ -188,7 +187,6 @@
   }
 }
 
-
 // Bars with Ratchicons
 // --------------------------------------------------
 
@@ -219,7 +217,6 @@
   }
 }
 
-
 // Bars for search forms
 // --------------------------------------------------
 
@@ -227,8 +224,9 @@
 .bar input[type="search"] {
   height: 29px;
   margin: 6px 0;
+  background-color: $base-white;
+  color: $color-666666;
 }
-
 
 // Bars with segmented controls
 // --------------------------------------------------
@@ -237,4 +235,18 @@
 .bar .segmented-control {
   top: 7px;
   margin: 0 auto;
+}
+
+.bar .btn-search-cancel {
+  top: -14px;
+  left: 6px;
+  border: 0;
+}
+
+.bar-search {
+  background-color: #efefef;
+}
+
+.bar-border-bottom {
+  border-bottom: 1px solid $color-c1c1c1;
 }

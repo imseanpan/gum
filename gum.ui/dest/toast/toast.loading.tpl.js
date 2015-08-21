@@ -1,0 +1,2 @@
+/*TMODJS:{"version":6,"md5":"8ced311a0c30537e90295aeb811243e9"}*/
+var template=require("../template");module.exports=template("toast/toast.loading.tpl",function(a){"use strict";var b=this,c=(b.$helpers,b.$escape),d=a.message,e="";return e+='<div class="toast-message"><span class="spinner-white"></span>',e+=c(d),e+="</div> ",new String(e)});

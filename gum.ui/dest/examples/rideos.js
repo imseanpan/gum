@@ -1,0 +1,2 @@
+/*TMODJS:{"version":1,"md5":"992cb53b564110f834627157e1fe052b"}*/
+var template=require("template");module.exports=template("examples/rideos",'<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <title></title> </head> <body> </body> </html>');

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gum.SASS template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Gum.SASS CSS -->
+    <link href="../../gum.ui.sass/gum.css" rel="stylesheet">
+
+</head>
+<!--ontouchstart 解决IOS内不能点击的问题-->
+<body>
+
+<!-- Make sure all your bars are the first things in your <body> -->
+<header class="bar bar-nav">
+    <h1 class="title">radios</h1>
+</header>
+
+<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+<div class="content">
+    <ul class="table-view">
+        <li class="table-view-cell-arrow">
+            <a class="navigate-right">
+                <span class="badge-arrow">王灿</span>
+                被保险人
+            </a>
+        </li>
+        <li class="table-view-cell-arrow">
+            <a class="navigate-right">
+                <span class="badge-arrow">王灿</span>
+                被保险人
+            </a>
+        </li>
+        <li class="table-view-cell-radio">
+            <div class="grid">
+                <div class="grid-cell col-xs-5">
+                    <span>我只是一串字符串</span>
+                </div>
+                <div class="grid-cell col-xs-1">
+
+                </div>
+                <div class="grid-cell col-xs-6 radio">
+                        <label class="topcoat-radio" style="margin-right: 30px;">
+                            <input name="rd1" type="radio">
+                            <div class="topcoat-radio__checkmark" ></div>
+                            <span id="checkbox1-label3">是</span>
+                        </label>
+
+                        <label class="topcoat-radio">
+                            <input name="rd1" type="radio">
+                            <div class="topcoat-radio__checkmark" ></div>
+                            <span id="checkbox12-label4">否</span>
+                        </label>
+                    </div>
+            </div>
+        </li>
+        <li class="table-view-cell-radio">
+            <div class="grid">
+                <div class="grid-cell col-xs-5">
+                    <span>呵呵</span>
+                </div>
+                <div class="grid-cell col-xs-1">
+
+                </div>
+                <div class="grid-cell col-xs-6 radio">
+                    <label class="topcoat-radio" style="margin-right: 30px;">
+                        <input name="rd1" type="radio">
+                        <div class="topcoat-radio__checkmark" ></div>
+                        <span id="checkbox1-label">是</span>
+                    </label>
+
+                    <label class="topcoat-radio">
+                        <input name="rd1" type="radio">
+                        <div class="topcoat-radio__checkmark" ></div>
+                        <span id="checkbox12-label">否</span>
+                    </label>
+                </div>
+            </div>
+        </li>
+        <li class="table-view-cell-radio">
+            <div class="grid">
+                <div class="grid-cell col-xs-6">
+                    <span>啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</span>
+                </div>
+                <div class="grid-cell col-xs-1">
+
+                </div>
+                <div class="grid-cell col-xs-5 radio">
+                    <label class="topcoat-radio" style="margin-right: 30px;">
+                        <input name="rd1" type="radio">
+                        <div class="topcoat-radio__checkmark" ></div>
+                        <span id="checkbox1-label1">是</span>
+                    </label>
+
+                    <label class="topcoat-radio">
+                        <input name="rd1" type="radio">
+                        <div class="topcoat-radio__checkmark" ></div>
+                        <span id="checkbox12-label2">否</span>
+                    </label>
+                </div>
+            </div>
+        </li>
+
+        <li class="table-view-cell-arrow">
+            <a class="navigate-right">
+                <div class="grid">
+                    <div class="grid-cell col-xs-6">
+                        <span>阿拉巴马总统</span>
+                    </div>
+                    <div class="grid-cell col-xs-1">
+
+                    </div>
+                    <div class="grid-cell col-xs-5">
+
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <li class="table-view-cell-arrow">
+            <a class="radio-check-right radio-check-selected">
+                <span>阿拉巴马总统</span>
+            </a>
+        </li>
+        <li class="table-view-cell-arrow">
+            <a class="radio-check-right">
+                <span>阿拉巴马总统</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

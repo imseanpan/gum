@@ -262,11 +262,6 @@
   }
 }
 
-@font-face {
-  font-family: "numbox";
-  src: url('./fonts/numbox.eot');
-  src: url('./fonts/numbox.eot?#iefix') format('embedded-opentype'), url('./fonts/numbox.woff') format('woff'), url('./fonts/numbox.ttf') format('truetype'), url('./fonts/numbox.svg#iconfont') format('svg');
-}
 
 @font-face {
   font-family: "pingan";
@@ -278,7 +273,7 @@
 }
 
 .iconfont {
-  font-family: "numbox" !important;
+  font-family: "pingan" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -298,20 +293,38 @@
   }
 }
 
-.icon-fail:before {
+.icon-fail01:before {
   content: "\e608";
 }
 
-.icon-right:before {
+.icon-right01:before {
   content: "\e607";
 }
 
-.icon-share:before {
+.icon-share01:before {
   content: "\e606";
 }
 
-.icon-calendar:before {
+.icon-calendar01:before {
   content: "\e600";
+}
+
+.icon-top01 {
+  &:before {
+    content: "\e609";
+  }
+}
+
+.icon-jian {
+  &:before {
+    content: "\e60c";
+  }
+}
+
+.icon-jia {
+  &:before {
+    content: "\e60a";
+  }
 }
 
 

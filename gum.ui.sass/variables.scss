@@ -17,16 +17,18 @@ $negative-color: #f66b6b !default;
 $checkbox-color: #ed7242 !default;
 $color-e06363: #e06363 !default;
 $color-333333: #333333 !default;
+$color-666666: #666666 !default;
 $color-999999: #999999 !default;
+$color-c1c1c1: #c1c1c1 !default;
 $color-dcdcdc: #dcdcdc !default;
 $color-dfefe1: #dfdfe1 !default;
 $color-efefef: #efefef !default;
-$color-c1c1c1: #c1c1c1 !default;
+
 
 //$negative-color2: hsl(0,88%,56%) !default;
 
 // Font colors
-$base-font-color: #333 !default;
+$base-font-color: $color-666666 !default;
 
 // Main theme colors
 $base-black: #000 !default;
@@ -68,7 +70,7 @@ $timing-fuction: cubic-bezier(.1, .5, .1, 1) !default;
 // Borders
 // --------------------------------------------------
 
-$border-default: 1px solid #ddd !default;
+$border-default: 1px solid $color-dcdcdc !default;
 $border-radius: 6px !default;
 
 $padding-width: 15px !default;

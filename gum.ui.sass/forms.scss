@@ -1,7 +1,7 @@
 //
 // Forms
 // --------------------------------------------------
-
+.gum {
 // Force form elements to inherit font styles
 input,
 textarea,
@@ -245,8 +245,8 @@ select {
   label {
     float: none;
     display: inline-block;
-    width: 100%;
-    padding-right: 58px;
+    //width: 100%;
+    //padding-right: 58px;
   }
 }
 
@@ -426,7 +426,7 @@ select {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 9999;//z("default");
+    z-index: 9999; //z("default");
     .icon {
       color: #333;
       font-size: 20px;
@@ -460,6 +460,7 @@ select {
       display: none;
     }
   }
+}
 }
 
 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gum.SASS template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Gum.SASS CSS -->
+    <link href="../../gum.ui.sass/gum.css" rel="stylesheet">
+
+</head>
+<!--ontouchstart 解决IOS内不能点击的问题-->
+<body>
+<div class="gum">
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <h1 class="title">列表</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <div style="height:40px;"></div>
+        <ul class="table-view">
+            <li class="table-view-cell-arrow">
+                <a class="navigate-right">
+                    <span class="badge-arrow">王灿</span>
+                    被保险人
+                </a>
+            </li>
+            <li id="one1" class="table-view-cell-arrow">
+                <a id="one11" class="navigate-right ">
+                    <span class="badge-arrow">身份证</span>
+                </a>
+            </li>
+            <li class="table-view-cell-arrow">
+                <a class="navigate-right">
+                    <div class="grid">
+                        <div class="grid-cell col-xs-2">
+                            <span class="badge-arrow">王灿王</span>
+                        </div>
+                        <div class="grid-cell col-xs-9">
+                <span class="right-span"
+                      style="overflow: hidden;
+                      white-space: nowrap;width: 100%;
+                      text-overflow: ellipsis;
+                      margin-bottom: -6px;
+                        float: left;">
+                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                </span>
+                        </div>
+                        <div class="grid-cell col-xs-1">
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="table-view-card " style="margin: 5px;
+            line-height: 25px;">
+                <div class="grid inner-card">
+                    <div class='grid-cell col-xs-4'>
+                        <div>分单号：</div>
+
+                        <div>出险人姓名：</div>
+
+                        <div>受理日期：</div>
+                    </div>
+                    <div class='grid-cell col-xs-6'>
+                        <p>12345678901234567890</p>
+
+                        <p>阿里 巴哈 欧巴马 普京</p>
+
+                        <p>2014-05-01</p>
+                    </div>
+                    <div class='grid-cell col-xs-2 inner-right-text'>
+                        <span>审核中</span>
+                    </div>
+
+                    <span class="triangle-button red">
+                        <span class="inner">自助</span>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<style>
+.inner-haha{
+
+}
+</style>
+</body>
+</html>

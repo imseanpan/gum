@@ -1,0 +1,45 @@
+/*
+Error: Invalid US-ASCII character "\xE4"
+        on line 112 of forms.scss
+
+107:   margin-bottom: 0;
+108:   background-color: transparent;
+109:   border-radius: 0;
+110:   @include box-shadow(none);
+111:   border: 0;
+112:   //  @include hairline(single, #c8c7cc, 15px);//为啥之前给input，textarea加了边线？都放入input-row的话，是不需要的
+113: }
+114: 
+115: .input-group input[type="search"] {
+116:   background: none;
+117: }
+
+Backtrace:
+forms.scss:112
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:1320:in `block in find_encoding_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:1319:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:1319:in `each_with_index'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:1319:in `find_encoding_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/util.rb:896:in `check_sass_encoding'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:423:in `check_encoding!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:379:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/bin/scss:13:in `<top (required)>'
+/usr/bin/scss:23:in `load'
+/usr/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xE4\"\A         on line 112 of forms.scss\A \A 107:   margin-bottom: 0;\A 108:   background-color: transparent;\A 109:   border-radius: 0;\A 110:   @include box-shadow(none);\A 111:   border: 0;\A 112:   //  @include hairline(single, #c8c7cc, 15px);//为啥之前给input，textarea加了边线？都放入input-row的话，是不需要的\A 113: }\A 114: \A 115: .input-group input[type=\"search\"] {\A 116:   background: none;\A 117: }"; }

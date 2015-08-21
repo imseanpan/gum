@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gum.SASS template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Gum.SASS CSS -->
+    <link href="../../gum.ui.sass/gum.css" rel="stylesheet">
+
+</head>
+<!--ontouchstart 解决IOS内不能点击的问题-->
+<body class="new-back">
+<div class="gum">
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav bar-border-bottom" style="height: 37px;background-color: #fffce8;">
+        <div class="top-title">
+            哈利路亚亚拉嘎
+        </div>
+    </header>
+    <div class="grid" style="margin-top: 37px;">
+        <div class="grid-cell col-xs-6 hehe-left" style="width:24px;height: 24px;"></div>
+        <div class="grid-cell col-xs-6 hehe-right" style="width:24px;height: 24px;"></div>
+    </div>
+    <!--Wrap all non-bar HTML in the .content div (this is actually what scrolls)-->
+    <div class="content inner-haha" style="padding-top: 37px;">
+        <ul class="table-view" style="  margin-top: -1px;">
+            <li class="table-view-cell-arrow">
+                <a class="navigate-right">
+                    <span class="badge-arrow">王灿</span>
+                    被保险人
+                </a>
+            </li>
+            <li id="one1" class="table-view-cell-arrow">
+                <a id="one11" class="navigate-right ">
+                    <span class="badge-arrow">身份证</span>
+                </a>
+            </li>
+            <li class="table-view-cell-arrow">
+                <a class="navigate-right">
+                    <div class="grid">
+                        <div class="grid-cell col-xs-2">
+                            <span class="badge-arrow">王灿王</span>
+                        </div>
+                        <div class="grid-cell col-xs-9">
+    <span class="right-span"
+          style="overflow: hidden;
+    white-space: nowrap;width: 100%;
+    text-overflow: ellipsis;
+    margin-bottom: -6px;
+    float: left;">
+    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+    </span>
+                        </div>
+                        <div class="grid-cell col-xs-1">
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+
+</div>
+<style>
+    .new-back {
+        background-color: #dcdcdc;
+
+    }
+
+    .inner-haha {
+        margin-left: 12px;
+        margin-right: 12px;
+
+        background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'> <rect fill='#c1c1c1' x='0' y='0' width='0.75' height='100%'/> <rect fill='#c1c1c1' x='99.9%' y='0' width='0.75' height='100%'/></svg>");
+        background-position-x: 0;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+        border-bottom: 0;
+    }
+
+    .top-title {
+        padding-top: 8px;
+        padding-left: 3px;
+        font-size: 12px;
+    }
+
+    .hehe-right {
+
+    }
+
+    .hehe-right::before {
+        content: '';
+        display: inline-block;
+        border-left: 12px solid;
+        border-bottom: 12px solid transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-left-color: #c1c1c1;
+    }
+
+    .hehe-left {
+
+    }
+
+    .hehe-left::before {
+        content: '';
+        display: inline-block;
+        border-right: 12px solid;
+        border-bottom: 12px solid transparent;
+        position: absolute;
+        top: 0;
+
+        border-right-color: #c1c1c1;
+    }
+</style>
+</body>
+</html>
