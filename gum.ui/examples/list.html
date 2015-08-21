@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gum.SASS template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Gum.SASS CSS -->
+    <link href="../../gum.ui.sass/gum.css" rel="stylesheet">
+
+</head>
+<!--ontouchstart 解决IOS内不能点击的问题-->
+<body ontouchstart="" >
+<div class="gum">
+<!-- Make sure all your bars are the first things in your <body> -->
+<header class="bar bar-nav">
+    <h1 class="title">列表</h1>
+</header>
+
+<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+<div class="content">
+    <div style="height:40px;"></div>
+
+    <ul class="table-view">
+
+        <li class="table-view-cell">
+            <input type="date"/>
+        </li>
+
+        <li class="table-view-cell-arrow">
+            <a class="navigate-right">
+                <span class="badge-arrow">王灿</span>
+                被保险人
+            </a>
+        </li>
+        <li id="one1" class="table-view-cell-arrow">
+            <a id="one11" class="navigate-right ">
+                <span class="badge-arrow">身份证</span>
+            </a>
+        </li>
+        <li class="table-view-cell-arrow">
+            <a class="navigate-right">
+            <div class="grid">
+                <div class="grid-cell col-xs-2">
+                    <span class="badge-arrow">王灿王</span>
+                </div>
+                <div class="grid-cell col-xs-9">
+                <span class="right-span"
+                      style="overflow: hidden;
+                      white-space: nowrap;width: 100%;
+                      text-overflow: ellipsis;
+                      margin-bottom: -6px;
+                        float: left;">
+                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                </span>
+                </div>
+                <div class="grid-cell col-xs-1">
+                </div>
+            </div>
+            </a>
+        </li>
+        <li class="table-view-cell-arrow">
+            <a class="navigate-right-up">
+                <span class="badge-arrow">王灿</span>
+
+            </a>
+        </li>
+        <li class="table-view-cell-arrow">
+            <a class="navigate-right">
+                <span class="badge-arrow">王灿</span>
+
+            </a>
+        </li>
+        <li id="li1" class="table-view-cell-arrow">
+            <a class="navigate-right-down">
+                <span class="badge-arrow">王灿王灿王灿王灿王灿王灿王灿王灿</span>
+            </a>
+        </li>
+
+        <li id="il1" class="table-view-cell-arrow collapse-show">
+            <a class="navigate-right-down">
+                <span class="badge-arrow">a</span>
+            </a>
+        </li>
+        <li id="il2" class="table-view-cell-arrow collapse-show">
+            <a class="navigate-right-down">
+                <span class="badge-arrow">b</span>
+            </a>
+        </li>
+        <li id="il3" class="table-view-cell-arrow collapse-show">
+            <a class="navigate-right-down">
+                <span class="badge-arrow">b</span>
+            </a>
+        </li>
+        <li id="il4" class="table-view-cell-arrow collapse-show">
+            <a class="navigate-right-down">
+                <span class="badge-arrow">b</span>
+            </a>
+        </li>
+        <li id="il5" class="table-view-cell-arrow collapse-show">
+            <a class="navigate-right-down">
+                <span class="badge-arrow">b</span>
+            </a>
+        </li>
+        <li class="table-view-cell-arrow">
+            <a class="navigate-right">
+                <span class="badge-arrow">王灿</span>
+                被保险人
+            </a>
+        </li>
+        <li id="li2" class="table-view-cell-arrow">
+            <div id="one" class="grid input-right">
+
+                <div class="grid-cell col-xs-4">
+                    选择长
+                </div>
+                <div class="grid-cell col-xs-7">
+                    <select id="sel" dir="rtl" class="table-view-select">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+        </li>
+        <li class="table-view-cell-arrow short-line">
+            <div class="grid input-right">
+
+                <div class="grid-cell col-xs-4">
+                    选择短
+                </div>
+                <div class="grid-cell col-xs-7">
+                    <select id="sel" dir="rtl" class="table-view-select">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+        </li>
+
+        <li id="li3" class="table-view-cell-arrow">
+            <a class="navigate-right-down">
+                <span class="badge-arrow">ao</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+<script>
+    var sel = document.getElementById('sel');
+    var one = document.getElementById('one');
+
+    sel.addEventListener('compositionstart',function () {
+        one.classList.remove('navigate-animation-down');
+        one.classList.add('navigate-animation-right');
+        console.log('open');
+    });
+    sel.addEventListener('compositionend',function () {
+        one.classList.remove('navigate-animation-down');
+        one.classList.add('navigate-animation-right');
+        console.log('close');
+    });
+
+
+    //    var li1 = document.getElementById('li1');
+    //    var one1 = document.getElementById('one1');
+    //    one1.addEventListener('click',function () {
+    //        if (one.classList.contains('navigate-animation-down')) {
+    //            one.classList.remove('navigate-animation-down');
+    //            one.classList.add('navigate-animation-right');
+    //        }
+    //        else {
+    //            one.classList.add('navigate-animation-down');
+    //            one.classList.remove('navigate-animation-right');
+    //        }
+    //
+    //
+    //    });
+
+
+    li1.addEventListener('click',function () {
+        var div1 = document.getElementById('div1');
+        var il1  = document.getElementById('il1');
+        var il2  = document.getElementById('il2');
+        var il3  = document.getElementById('il3');
+        var il4  = document.getElementById('il4');
+        var il5  = document.getElementById('il5');
+
+        il1.classList.toggle('collapse-hide');
+        il2.classList.toggle('collapse-hide');
+        il3.classList.toggle('collapse-hide');
+        il4.classList.toggle('collapse-hide');
+        il5.classList.toggle('collapse-hide');
+
+
+    });
+
+</script>
+</body>
+</html>
