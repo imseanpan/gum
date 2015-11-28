@@ -36,8 +36,8 @@ reqwest是一个ajax单独库，使用的人很多，因为木有时间，也不
 
 **reqwest** 更多参考[GitHub](https://github.com/ded/reqwest)
 
-### director
-简单的前端路由库，不多做介绍了。
+### 路由库
+自己动手写了个路由库，很传统没什么很新鲜的，但是 只有200行 还带注释，算是个基本库，喜欢的可以自己拿去。
 
 **director** 更多参考[GitHub](https://github.com/flatiron/director)
 ## 自动化单元测试
